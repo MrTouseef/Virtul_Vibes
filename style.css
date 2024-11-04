@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+#header {
+  background-color: #008080;
+  position: sticky;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; */
+}
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+#logo {
+  justify-content: left;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: right;
+  /* justify-content: right; */
+}
+ul li {
+  list-style-type: none;
+  /* margin-top: 1rem; */
+  margin: 1vh;
+  padding: 1vh;
+}
+ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 3vh;
+  color: #f5f5dc;
+  margin: 0.5rem;
+  /* padding: 1rem; */
+}
+
+a:hover {
+  border: 2px solid #f5f5dc;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.CTA {
+  border: none;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: #171a1a;
+  font-size: 16px;
+  /* border: 3px solid #f5f5dc; */
+}
+.CTA:hover {
+  background-color: #008080;
+  color: #f5f5dc;
+  border: 2px solid #f5f5dc;
+}
+
+/* Hero Section CSS */
+
+#hero-sect {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #171a1a;
+  padding: 1rem;
+}
+.sect-itme {
+  /* border: 2px solid black; */
+  height: 500px;
+  width: 605px;
+  margin: 2px;
+  justify-content: space-evenly;
+}
+#sect-item-2 {
+  background-image: url(assests/Hero1.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  /* margin: 0; */
+}
+/* @keyframes spin { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(360deg); 
+    }
+  }  */
+
+#sect-item-1 {
+  align-content: center;
+  text-align: center;
+}
+
+#sect-item-1 > h1 {
+  color: #008080;
+  font-size: 34px;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+#sect-item-1 > h3 {
+  color: #f5f5dc;
+  font-size: 20px;
+  padding: 1rem;
+}
+
+#sect-item-1 > p {
+  color: #f5f5dc;
+  font-size: 16px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Section 2 CSS */
+
+#about-sect {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  background-color: #008080;
+  padding: 2rem;
+  padding-top: 3rem;
+  height: auto;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+}
+.abt-h2 {
+  color: #f5f5dc;
+  font-size: 45px;
+  padding: 1rem;
+}
+.abt-h3 {
+  color: #171a1a;
+  font-size: 30px;
+  padding: 1rem;
+}
+.abt-p {
+  color: #f5f5dc;
+  font-size: 20px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Service Secton Styling */
+#service-sect {
+  /* display: flexbox; */
+  background-image: url(assests/serviceSect.jpg);
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  /* border: 1px solid black; */
+  /* background-color: #171a1a; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  color: #f5f5dc;
+  position: relative;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+#service-sect::before {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.5;
+}
+.servic-items {
+  position: relative;
+  z-index: 1;
+}
+
+.S-H > h2 {
+  padding-bottom: 10px;
+  font-size: 46px;
+  color: #f5f5dc;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* width: 90.9%; */
+}
+
+.service {
+  /* border: 1px solid white; */
+  width: 380px;
+  height: 380px;
+  /* height: fit-content; */
+  margin: 8px;
+  text-align: center;
+  padding: 3px;
+  /* align-content: center; */
+  justify-content: space-between;
+  background-color: #008080;
+  border-radius: 12px;
+}
+
+.image {
+  height: 140px;
+  background-color: #f5f5dc;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+.h4 {
+  font-size: 30px;
+  margin: 13px;
+  padding: 6px;
+}
+.desc {
+  margin: 12px;
+  font-size: 16px;
+  padding: 4px;
+}
+
+/* Heros Section Styling */
+
+#Team {
+  background-color: #0b8f8f;
+  height: auto;
+  /* width: auto; */
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.hero-heading {
+  color: #171a1a;
+  font-size: 70px;
+}
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+#tm {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.member {
+  box-shadow: 5px 5px #171a1a;
+  width: 450px;
+  height: 180px;
+  background-color: #f5f5dc;
+  margin: 12px;
+  margin-left: 14px;
+  margin-right: 14px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.imag {
+  margin: 2px;
+  /* background-color: #171a1a; */
+  height: auto;
+  /* background-image: url(assests/Richard.jpg); */
+  width: 155px;
+  border-radius: 15px;
+  border: 1px solid rgb(0, 0, 0);
+}
+.Dr-Data {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  width: 62%;
+  margin: 2px;
+  padding: 1px;
+  border-radius: 15px;
+  justify-content: center;
+}
+#m1 {
+  background-image: url(assests/Sara.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#m2 {
+  background-image: url(assests/Richard.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#m3 {
+  background-image: url(assests/Jassica.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#m4 {
+  background-image: url(assests/Ammy.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#m5 {
+  background-image: url(assests/David.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Dr-Data > h5 {
+  padding: 6px;
+  color: #0b8f8f;
+  font-size: 30px;
+}
+.Dr-Data > h6 {
+  font-size: 18px;
+  padding: 6px;
+}
+
+.SM {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+  /* border: 1px solid black; */
+  width: auto;
+  height: 50px;
+  justify-content: space-around;
+  align-content: center;
+  cursor: pointer;
+}
+.Social {
+  height: 35px;
+  width: 35px;
+  /* border: 1px solid black; */
+  border-radius: 6px;
+}
+#Fb-icon {
+  background-image: url(assests/fb.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#In-icon {
+  background-image: url(assests/in.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Insta-icon {
+  background-image: url(assests/insta.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Twit-icon {
+  background-image: url(assests/twet.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Testimonial slide */
+
+#testimonials-container {
+  background-color: #171a1a;
+  height: auto;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 40px;
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+}
+.hpy-h2{
+  color: #f5f5dc;
+  font-size: 40px;
+  padding: 12px;
+  margin-bottom: 12px;
+  /* display: block;
+  text-align: center;
+  justify-content: center;
+  align-content: center; */
+}
+
+.happy-customer{
+  display:flex;
+  overflow: auto;
+  /* overflow-y: hidden; */
+  white-space: nowrap;
+
+}
+.customer {
+  /* box-shadow: 5px 5px #171a1a; */
+  width: 500px;
+  height: 340px;
+  background-color: #f5f5dc0f;
+  margin: 12px;
+  /* margin-left: 14px;
+  margin-right: 14px; */
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  
+}
+.pic {
+  margin: 2px;
+  height: 170px;
+  width: 170px;
+  border-radius: 15px;
+  border: 1px solid rgb(0, 0, 0);
+}
+#pic1 {
+  background-image: url(assests/p-1.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+#pic2 {
+  background-image: url(assests/p2.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+#pic3 {
+  background-image: url(assests/p3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+#pic4 {
+  background-image: url(assests/p4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+#pic5 {
+  background-image: url(assests/p5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+.ABC {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: auto;
+  height: auto; 
+  margin: 2px;
+  padding: 10px;
+  border-radius: 15px; 
+  justify-content: center;
+}
+.ABC > h5 {
+  padding: 6px;
+  color: #0b8f8f;
+  font-size: 20px;
+}
+.ABC > p {
+  color: #f5f5dc;
+  font-size: 12px;
+}
